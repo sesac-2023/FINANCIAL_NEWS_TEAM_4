@@ -1,4 +1,4 @@
-### 컨텐츠 기반 필터링(Doc2Vec)을 이용한 
+### 컨텐츠 기반 필터링(Doc2Vec)과 협업 필터링을 이용한 
 # 📰 경제 뉴스 기사 추천 시스템
 <br/><br/>
 ## 1. Outline
@@ -53,12 +53,21 @@
 <br/><br/>
 ### 4) Model Application Results
 
-- 기사 url 입력 → 본문과 유사한 뉴스 10개 추천
+- 컨텐츠 기반 필터링  
+기사 url 입력 → 본문과 유사한 뉴스 10개 추천
 
 ![url](https://github.com/sesac-2023/FINANCIAL_NEWS_TEAM_4/assets/76051357/977f7471-2071-4250-9818-39aa2fffd379)
 
 
 ![recommend](https://github.com/sesac-2023/FINANCIAL_NEWS_TEAM_4/assets/76051357/a95e99f1-a4a5-4f53-8cb6-393e478b6ec1)
+<br/><br/>
+- 협업 필터링  
+target user의 id 입력  
+  -> target user가 남긴 댓글을 바탕으로 유사한 user 3명 선정  
+  -> 유사한 user가 댓글을 남긴 기사 추천 (target user가 이미 읽은 기사는 제외)
+  
+![image](https://github.com/sesac-2023/FINANCIAL_NEWS_TEAM_4/assets/87634594/07427654-64a9-4e70-954d-bb2528895103)
+
 
 <br/><br/><br/>
 > ## Sub Process
